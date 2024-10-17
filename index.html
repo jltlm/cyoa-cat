@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js" defer></script>
+    <title>Kato's Quest</title>
+</head>
+<body>
+    <h1>Kato Quest</h1>
+
+    <div id="wrapper">
+
+        <div id="dialogueBar">
+            <form action="" method="" id="dialogue"></form>
+        </div>
+    
+        <div id="sceneImgContainer">
+            <img alt="story character" src="assets/titlePage.png" class="sceneImg" id="sceneCharImg">
+            <img alt="story background" class="sceneImg" id="sceneBgImg">
+        </div>
+        
+        <div id="narration">
+            <h2 id="sceneText"></h2>
+        </div>
+    
+    </div>
+
+    <div id="formDiv">
+        <h1>Your friendly neighborhood paywall</h1>
+        <h3>Want to experience more of this simulation? Enter your details here!</h3>
+        <form id="paywallForm" onsubmit="return validateForm();" ></form>
+    </div>
+
+</body>
+</html>
+

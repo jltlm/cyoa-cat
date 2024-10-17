@@ -1,0 +1,106 @@
+/* scene img */
+#sceneImgContainer {
+    grid-area: pic;
+    border: 10px black ridge;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+}
+
+.sceneImg {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 100%;
+}
+
+#sceneCharImg {
+    z-index: 1;
+    position: absolute;
+}
+
+#sceneBgImg {
+    width: 100%;
+}
+
+/* dialogue */
+#dialogueBar {
+    grid-area: log;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(143, 143, 143);
+    border: 10px black ridge;
+}
+
+#dialogueBar select {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+}
+
+select option[disabled] {
+    display: none;
+}
+
+div.log {
+    padding: 5px;
+    border: none;
+    background-color: rgb(218, 218, 218);
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+}
+
+div.log.active {
+    background-color: white;
+}
+
+/* narration */
+div#narration {
+    grid-area: narration;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 10px rgb(0, 0, 0) ridge;
+}
+
+/* form */
+div#formDiv {
+    background-color: white;
+    border: 5px black solid;
+    width: 500px;
+    padding: 5px;
+    visibility: hidden;
+    /* position: fixed;
+    top:30%;
+    left:30%; */
+    z-index: 2;
+}
+
+/* wrapper */
+div#wrapper {
+    display: grid;
+    grid-template-columns: 1000px auto;
+    grid-template-rows: 150px 600px;
+    grid-template-areas:
+    "narration  log"
+    "pic        log"
+    ;
+
+}
+
+body {
+    background-color: gray;
+}
